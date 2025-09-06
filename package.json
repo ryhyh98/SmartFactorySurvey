@@ -1,0 +1,34 @@
+{
+  "name": "smartfactorysurvey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.smartfactorysurvey",
+    "productName": "SmartFactorySurvey",
+    "files": [
+      "index.html",
+      "main.js",
+      "preload.js",
+      "sfactory_assessment.db"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12"
+  }
+}
